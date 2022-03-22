@@ -1,0 +1,322 @@
+@media screen and (min-width: 50em) {
+    // HERO SECTION
+    .hero {
+        // border: 1px solid greenyellow;
+        width: 100%;
+        background: url(../images/desktop/image-hero.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .logo {
+        width: 15%;
+    }
+    
+    .menuBtn {
+        display: none;
+    }
+    
+    .hero-text-wrapper {
+        // border: 1px solid yellow;
+        margin-inline: auto;
+        width: 85%;
+    }
+    
+    .hero-text {
+        width: 57%;
+        height: 280px;
+        margin: 0;
+        font-size: 4rem;
+    }
+    
+    .menu {
+        // border: 1px solid yellow;
+        display: block;
+        background: transparent;
+    
+        .menu-close {
+            display: none;
+        }
+    
+        .menu-items {
+            // border: 1px solid $text-white;
+            flex-direction: row;
+            margin-top: 2rem;
+            margin-left: 0;
+            margin-right: 0;
+            margin-inline: auto;
+            gap: 1.5rem;
+            text-transform: capitalize;
+            justify-content: flex-end;
+            width: 90%;
+    
+            a {
+                font-size: 1rem;
+
+    
+                &:hover {
+                    color: $text-white;
+                    border-bottom: 3px solid $text-white;
+                    padding-bottom: .05rem;
+                }
+            }
+        }
+    }
+
+    // SECTION
+    .section {
+        // border: 1px solid #000;
+        width: 95%;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 5rem;
+    
+        .section-img {
+            // border: 1px solid red;
+            grid-column: 1 / 4;
+            grid-row: 1 / 4;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        .section-text {
+            // border: 1px solid green;
+            grid-column: 3 / -1;
+            grid-row: 2 / 4;
+            margin-top: 0;
+            margin-inline: auto;
+            width: 100%;
+            background: $text-white;
+            padding: 8rem 0 0 8rem;
+
+    
+            h2 {
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 3rem;
+            }
+    
+            p {
+                color: $dark-gray;
+                margin-top: 1.5rem;
+                text-align: left;
+                line-height: 1.6;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    
+    .section-2 {
+        .section-2-header {
+            // border: 1px solid red;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 95%;
+            margin-inline: auto;
+            margin-top: 8rem;
+            h2 {
+                text-align: center;
+                margin-top: 0;
+                font-size: 3rem;
+            }
+    
+            .btn-wrapper {
+                display: block;
+            }
+
+        }
+    
+        .img-section {
+            // border: 1px solid goldenrod;
+            margin-top: 3rem;
+            width: 95%;
+            margin-inline: auto;
+            color: $text-white;
+            text-transform: uppercase;
+    
+            display: grid;
+            gap: 1.5rem;
+            grid-template-areas: 
+            'deep-earth night-arcade soccer-team the-grid'
+            'from-up pocket-borealis the-curiosity make-it';
+
+    
+            .img-wrapper {
+                // border: 1px solid red;
+                position: relative;
+                img {
+                    width: 100%;
+                }
+    
+                h3 {
+                    position: absolute;
+                    left: 1.3rem;
+                    bottom: 1.3rem;
+                }
+    
+                &:hover {
+                    cursor: pointer;
+                    opacity: .5;
+                    @include easeOut
+                }
+            }
+    
+            .deep-earth {
+                // border: 1px solid salmon;
+                height: 530px;
+                background: url(../images/desktop/image-deep-earth.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: contain;
+            }
+    
+            .night-arcade {
+                // border: 1px solid salmon;
+                height: 530px;
+                background: url(../images/desktop/image-night-arcade.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: contain;
+            }
+    
+            .soccer-team {
+                // border: 1px solid salmon;
+                height: 530px;
+                background: url(../images/desktop/image-soccer-team.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: contain;
+            }
+    
+            .the-grid {
+                // border: 1px solid salmon;
+                height: 530px;
+                background: url(../images/desktop/image-grid.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: contain;
+            }
+    
+            .from-above {
+                // border: 1px solid salmon;
+                height: 530px;
+                background: url(../images/desktop/image-from-above.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: contain;
+            }
+    
+            .pockect {
+                // border: 1px solid salmon;
+                height: 530px;
+                background: url(../images/desktop/image-pocket-borealis.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: contain;
+            }
+    
+            .curiosity {
+                // border: 1px solid salmon;
+                height: 530px;
+                background: url(../images/desktop/image-curiosity.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: contain;
+            }
+    
+            .fisheye {
+                // border: 1px solid salmon;
+                height: 530px;
+                background: url(../images/desktop/image-fisheye.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: contain;
+            }
+        }
+    
+        .btn-wrapper {
+            // border: 1px solid rosybrown;
+            display: none;
+        }
+    }
+
+    // FOOTER
+    .footer {
+        background-color: $black;
+        margin-top: 9rem;
+
+        .footer-section-wrapper {
+            // border: 1px solid $text-white;
+            display: flex;
+            width: 95%;
+            margin-inline: auto;
+            justify-content: space-between;
+
+            .footer-1 {
+                // border: 1px solid red;
+                padding-top: 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2rem;
+                
+        
+                img {
+                    width: 30%;
+                }
+        
+                .items {
+                    // border: 1px solid $text-white;
+                    flex-direction: row;
+                    align-items: flex-start;
+        
+                    a {
+                        color: $text-white;
+            
+                        &:hover {
+                            color: $dark-gray;
+                        }
+                    }
+                }
+            }
+
+            .footer-2 {
+                // border: 1px solid blue;
+                align-items: flex-end;
+                .icons {
+                    // border: 1px solid $text-white;
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: flex-end;
+                    margin-top: 3rem;
+        
+                    .icon-item {
+                        padding-bottom: .5rem;
+                        &:hover {
+                            cursor: pointer;
+                            border-bottom: 2px solid $text-white;
+                        }
+                    }
+                }
+        
+                p {
+                    color: $dark-gray;
+                    text-align: right;
+                    margin-top: 1.5rem;
+                    padding-bottom: 3rem;
+                }
+            }
+        }
+    
+        
+    }
+}

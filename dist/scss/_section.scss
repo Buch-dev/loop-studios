@@ -1,0 +1,180 @@
+.section {
+    // border: 1px solid #000;
+    margin-top: 5rem;
+
+    .section-img {
+        // border: 1px solid red;
+        width: 85%;
+        height: 220px;
+        margin: auto;
+        background: url(../images/mobile/image-interactive.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .section-text {
+        // border: 1px solid green;
+        margin-top: min($numbers: 2.5rem);
+        margin-inline: auto;
+        width: 80%;
+
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        p {
+            color: $dark-gray;
+            margin-top: 1.2rem;
+            text-align: center;
+            line-height: 1.6;
+        }
+    }
+}
+
+.section-2 {
+    .section-2-header {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .btn-wrapper {
+            display: none;
+        }
+    }
+
+    
+
+    .img-section {
+        // border: 1px solid goldenrod;
+        margin-top: 3rem;
+        width: 85%;
+        margin-inline: auto;
+        color: $text-white;
+        text-transform: uppercase;
+
+        display: grid;
+        gap: 1.5rem;
+
+        .img-wrapper {
+            // border: 1px solid red;
+            position: relative;
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                position: absolute;
+                left: 1.3rem;
+                bottom: 1.3rem;
+            }
+
+            &:hover {
+                cursor: pointer;
+                opacity: .5;
+                @include easeOut
+            }
+        }
+
+        .deep-earth {
+            // border: 1px solid salmon;
+            height: 120px;
+            background: url(../images/mobile/image-deep-earth.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+
+        .night-arcade {
+            // border: 1px solid salmon;
+            height: 120px;
+            background: url(../images/mobile/image-night-arcade.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+
+        .soccer-team {
+            // border: 1px solid salmon;
+            height: 120px;
+            background: url(../images/mobile/image-soccer-team.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+
+        .the-grid {
+            // border: 1px solid salmon;
+            height: 120px;
+            background: url(../images/mobile/image-grid.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+
+        .from-above {
+            // border: 1px solid salmon;
+            height: 120px;
+            background: url(../images/mobile/image-from-above.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+
+        .pockect {
+            // border: 1px solid salmon;
+            height: 120px;
+            background: url(../images/mobile/image-pocket-borealis.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+
+        .curiosity {
+            // border: 1px solid salmon;
+            height: 120px;
+            background: url(../images/mobile/image-curiosity.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+
+        .fisheye {
+            // border: 1px solid salmon;
+            height: 120px;
+            background: url(../images/mobile/image-fisheye.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+    }
+
+    .btn-wrapper {
+        // border: 1px solid rosybrown;
+        text-transform: uppercase;
+        margin-top: 2.4rem;
+        text-align: center;
+        justify-content: center;
+        height: 3rem;
+
+        a {
+            border: 2px solid $very-dark-gray;
+            padding: .5rem 2.5rem;
+            color: $black;
+
+            &:hover {
+                background: $black;
+                color: $text-white;
+                border: none;
+            }
+        }
+    }
+}
