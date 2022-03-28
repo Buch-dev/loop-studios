@@ -18,8 +18,7 @@
 
     .section-text {
         // border: 1px solid green;
-        margin-top: min($numbers: 2.5rem);
-        margin-inline: auto;
+        margin: 2.5rem auto 0 auto;
         width: 80%;
 
         h2 {
@@ -55,9 +54,8 @@
 
     .img-section {
         // border: 1px solid goldenrod;
-        margin-top: 3rem;
         width: 85%;
-        margin-inline: auto;
+        margin: 3rem auto 0 auto;
         color: $text-white;
         text-transform: uppercase;
 
