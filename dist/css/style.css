@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 a {
@@ -9,6 +8,7 @@ a {
 }
 
 body {
+  box-sizing: border-box;
   font-family: 'Alata', sans-serif;
 }
 
@@ -49,7 +49,7 @@ h1, h2, h3, h4 {
 .hero-text {
   border: 2px solid #fff;
   text-transform: uppercase;
-  width: 85%;
+  width: 70%;
   margin: auto;
   padding: 1.5rem;
   color: white;
